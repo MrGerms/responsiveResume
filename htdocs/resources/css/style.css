@@ -1,0 +1,375 @@
+/* -------------------------------------------------------------------- 
+ * BASIC SETUP
+ * -------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	overflow-x:hidden;
+}
+
+html {
+    background-color: #f9f9f9;
+    color: #40373D;
+    font-family: 'Lato', 'Arial', serif;
+    font-weight: 300;
+    font-size: 1.75em;
+    text-rendering: optimizeLegibility;
+	line-height: 1.33em;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* -------------------------------------------------------------------- 
+ * REUSABLES
+ * -------------------------------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.skills {
+    max-width: 1140px;
+    margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.skills:first-child {
+	padding-top: 0px;
+	color:green;
+}
+
+.skills::after {
+	clear:both;
+}
+
+.skills::before, .skills::after {
+    content: "";
+    display: block;
+}
+
+.subheadingrow {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.subheadingrow h3 {
+	margin-top: 1.8em;
+}
+
+.notop {
+	padding-top: 0px;
+	margin-top: 0;
+}
+
+.box {
+	margin-top:.6em;
+    padding: 0;
+}
+
+.text-align-right {
+	text-align: right;
+	padding: 0;
+}
+
+.text-align-left {
+	text-align: left;
+	padding: 0;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+/* ----- HEADINGS ----- */
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+	font-weight: 700;
+	color: #f9f9f9;	
+    font-size: 2em;
+	font-style: italic;
+    margin: 0;
+	padding: 0;
+	word-spacing: -15px;
+	letter-spacing: 9px;
+	line-height: 1.33em;
+}
+
+h2 {
+	font-weight: 800;
+	color: #8C7268;
+    font-size: 1.2em;
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #73D9CF;
+    content: " ";
+    width: 374px;
+	margin: 0 auto;
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-weight: 400;
+    color: #8C7268;
+    font-size: 1em;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+
+/* -------------------------------------------------------------------- 
+ * HEADER
+ * -------------------------------------------------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../venders/img/hero/black-coffee-close-up-coffee-1422286_1140x679.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    height: 100vh;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-5%, -80%);
+}
+
+.contact, .contact h3, .contact a, .slogan h3 {
+	width: 100%;
+	text-align: left;
+	color:#fff;
+	padding-left: 3px;
+	word-spacing: 4px;
+	letter-spacing: 3px;
+	font-style:italic;
+}
+
+ /* -------------------------------------------------------------------- 
+ * SECTION AND PAGE LAYOUT STYLES
+ * -------------------------------------------------------------------- */
+section {
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+
+li:first-child {
+	padding-top: 0px;	
+	margin-top: .5em;
+}
+
+li {
+	margin-top: .75em;
+	list-style:none;
+}
+
+.section-employment-history {}
+
+.section-footer, .section-footer a {
+    background: #40373D;
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.section-footer a:hover { 
+	border-bottom: 1px solid #8C7268;
+}
+
+.section-skills,
+.section-education-references {
+	background: #f2f2f2;	
+}
+ 
+ion-icon {
+	font-size: .6em;
+	margin-bottom: 1px;
+}
+
+a ion-icon {
+	font-size: 2em;
+	text-decoration: none;
+	
+}
+
+.li-bullet {
+	width: 3.47%;
+}
+
+.li-text {
+	width: 95.53%;
+}
+
+a {
+	text-decoration: none;
+	color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+
+
+@media only screen and (max-width: 1139px) {
+	html {
+		font-size: 30px;		
+	}
+	
+	.header-text {
+		top: 50%;
+		left: 25%;
+		transform: none;
+	}
+
+	h1 {
+		font-size: 1.4em;
+		font-style: italic;
+		word-spacing: -15px;
+		letter-spacing: 9px;
+		line-height: 1.33em;
+	}
+
+	h2 {
+		font-size: 1.2em;
+		font-style: italic;
+	}
+
+	.li-bullet {
+	}
+
+	.li-text {
+		width: 90%;
+		padding-left: 0;
+	}
+
+	section {
+		/* padding-left: 5px; */
+		/* padding-right: 5px; */
+	}
+
+	.subheadingrow h3:nth-child(2){
+		color:red;
+	}
+
+
+	.text-align-right {
+		text-align: left;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.text-align-left {
+		text-align: left;
+		margin-top: 0;
+		padding-top: 0;	
+	}
+
+	.text-align-center {
+		text-align: center;
+		margin-top: 0;
+		padding-top: 0;
+	} 
+	 
+	.skills {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	
+	html {
+		font-size: 20px;		
+	}
+	
+	.header-text {
+		top: 50%;
+		left: 10%;
+		transform: none;
+	}
+
+	h1 {
+		font-size: 140%;
+		font-style: italic;
+		word-spacing: -15px;
+		letter-spacing: 9px;
+		line-height: 1.33em;
+	}
+
+	h2 {
+		font-size: 120%;
+		font-style: italic;
+	}
+
+	h2:after {
+		width: 200px;
+	}
+	.li-bullet {
+	}
+
+	.li-text {
+		width: 90%;
+		padding-left: 5px;
+	}
+
+	section {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.subheadingrow h3:nth-child(2){
+		color:red;
+	}
+
+
+	.text-align-right {
+		text-align: left;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.text-align-left {
+		text-align: left;
+		margin-top: 0;
+		padding-top: 0;	
+	}
+
+	.text-align-center {
+		text-align: left;
+		margin-top: 0;
+		padding-top: 0;
+	} 
+	 
+	.skills {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+}

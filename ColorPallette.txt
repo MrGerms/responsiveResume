@@ -1,0 +1,27 @@
+Light-Medium Grey
+Background, h1 text
+	#f2f2f2
+	R242 G242 B242
+
+
+
+
+Dark Grey, not quite black
+Text
+	#40373D
+	R64 G55 B61
+
+
+Light Green, kinda Turquoise
+Highlights, section dividers
+	#73D9CF
+	R115 G217 B207
+
+
+Grey Brown, wood tone, subtle lowlight divider
+	#BFA89B
+	R191 G168 B155
+
+Earthy Brown, h2 color
+	#8C7268
+	R140 G114 B104
