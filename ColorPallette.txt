@@ -1,3 +1,7 @@
+Default Background Color:
+	#f9f9f9;
+
+
 Light-Medium Grey
 Background, h1 text
 	#f2f2f2

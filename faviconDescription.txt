@@ -1,0 +1,9 @@
+https://favicon.io/favicon-generator/
+
+Text: JwT
+Background: Rounded
+Font Family: Lobster Two
+Font Size: 67
+
+font color: #214
+background color: #EDB

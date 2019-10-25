@@ -6,7 +6,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	overflow-x:hidden;
 }
 
 html {
@@ -32,14 +31,7 @@ html {
  * REUSABLES
  * -------------------------------------------------------------------- */
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto;
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-
-.skills {
+.row, .skills {
     max-width: 1140px;
     margin: 0 auto;
 	padding-top: 10px;
@@ -91,6 +83,15 @@ html {
 
 .text-align-center {
 	text-align: center;
+}
+
+.hr {
+    display: block;
+    height: 2px;
+    background-color: #73D9CF;
+    content: " ";
+    width: 374px;
+	margin: 20px auto;
 }
 
 /* ----- HEADINGS ----- */
@@ -150,10 +151,11 @@ h3 {
  * -------------------------------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../venders/img/hero/black-coffee-close-up-coffee-1422286_1140x679.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../vendors/img/hero/black-coffee-close-up-coffee-1422286_1140x679.jpg);
     background-size: cover;
     background-position: left bottom;
-    height: 100vh;
+	height: 100vh;
+	overflow-x:hidden;	
 }
 
 .header-text {
@@ -171,6 +173,10 @@ header {
 	word-spacing: 4px;
 	letter-spacing: 3px;
 	font-style:italic;
+}
+
+.name, .contact, .slogan, .header, .header-text {
+	height: auto;
 }
 
  /* -------------------------------------------------------------------- 
@@ -210,14 +216,16 @@ li {
 }
  
 ion-icon {
-	font-size: .6em;
+	font-size: 2em;
 	margin-bottom: 1px;
 }
 
 a ion-icon {
-	font-size: 2em;
 	text-decoration: none;
-	
+}
+
+.li-bullet ion-icon {
+	font-size: .6em;
 }
 
 .li-bullet {
@@ -235,7 +243,110 @@ a {
     font-weight: 300;
 }
 
+/*******************************
+	contact modal
+********************************/
 
+ /* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal Content Box */
+.modal-content {
+	background-color: #f9f9f9;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 2px solid #40373D;
+	border-radius: 10px;
+	width: 45%;
+}
+
+/* The Close Button */
+.close {
+	color: white;
+	background-color: red;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 0 10px;
+	border-radius: 9px;  
+}
+
+.close:hover,
+.close:focus {
+	text-decoration: none;
+	cursor: pointer;
+} 
+
+.modal-align-right {
+	text-align: right;
+}
+
+.modal-align-center {
+	text-align: center;
+	padding: 0 40px;
+}
+
+
+.modal-align-left {
+	text-align: left;
+	padding: 0 40px;
+}
+
+
+.btn {
+	background-color: #f2f2f2;
+	padding: 5px 10px;
+	border-radius: 5px;	
+}
+
+/*******************************
+		end contact modal
+********************************/
+
+
+/*****************************************
+		begin responsive adjustments
+******************************************/
+@media only screen and (max-width: 1500px) {
+	.modal-content {
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 10px;
+		width: 55%; /* Could be more or less, depending on screen size */
+	  }
+}
+
+@media only screen and (max-width: 1190px) {
+	.modal-content {
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 10px;
+		width: 65%; /* Could be more or less, depending on screen size */
+	}
+
+	.modal-align-right{
+		text-align: left;
+		width: 97%;
+	  }
+
+	.modal-input{
+		width: 97%;
+	}
+
+	.modal-input input, .modal-input textarea{
+		width: 100%;
+	}
+
+}
 
 @media only screen and (max-width: 1139px) {
 	html {
@@ -273,11 +384,6 @@ a {
 		/* padding-left: 5px; */
 		/* padding-right: 5px; */
 	}
-
-	.subheadingrow h3:nth-child(2){
-		color:red;
-	}
-
 
 	.text-align-right {
 		text-align: left;
@@ -331,6 +437,7 @@ a {
 	h2:after {
 		width: 200px;
 	}
+
 	.li-bullet {
 	}
 
@@ -343,11 +450,6 @@ a {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-
-	.subheadingrow h3:nth-child(2){
-		color:red;
-	}
-
 
 	.text-align-right {
 		text-align: left;
@@ -370,6 +472,12 @@ a {
 	.skills {
 		padding-top: 0;
 		padding-bottom: 0;
+	}
+
+	.modal-content {
+		margin: 5% auto; 
+		padding: 5px;
+		width: 95%;
 	}
 
 }
