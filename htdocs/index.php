@@ -44,11 +44,7 @@
 				<div id="contactModal" class="modal">
 					<!-- Modal content -->
 					<div class="modal-content">
-                        <div class="row">
-							<h2>Contact Form <span id="closeModal" class="close">&times;</span></h2>
-						</div>
-
-						<?php 
+						<?php
 							$modalContent = file_get_contents("snippets/forms/contactus.html");
 							echo sprintf($modalContent, "");
 						?>
@@ -60,24 +56,16 @@
 			<div class="row">
 				<h2>Skill Highlights</h2>
 			</div>
-			
-			<div class="skills notop">
-				<div class="col span-1-of-3 box text-align-left"> PHP </div>
-				<div class="col span-1-of-3 box text-align-center"> HTML/CSS </div>
-				<div class="col span-1-of-3 box text-align-right"> JS </div>
+			<div class="row">
+				<div class="skills notop"></div>
+					<div class="col span-1-of-3 box text-align-left"> PHP </div>
+					<div class="col span-1-of-3 box text-align-center"> HTML/CSS </div>
+					<div class="col span-1-of-3 box text-align-right"> JS </div>
+					<div class="col span-1-of-3 box text-align-left"> SASS </div>
+					<div class="col span-1-of-3 box text-align-center"> SQL </div>
+					<div class="col span-1-of-3 box text-align-right">  WordPress  </div>
+				</div>
 			</div>
-
-			<div class="skills">
-				<div class="col span-1-of-3 box text-align-left"> SASS </div>
-				<div class="col span-1-of-3 box text-align-center"> SQL </div>
-				<div class="col span-1-of-3 box text-align-right"> Lead Management </div>
-			</div>
-
-			<div class="skills">
-				<div class="col span-1-of-3 box text-align-left"> Twilio SMS </div>
-				<div class="col span-1-of-3 box text-align-center">  WordPress Plugin Creation  </div>
-			</div>
-						
 		</section>
 		
 		<section class="section-employment-history">

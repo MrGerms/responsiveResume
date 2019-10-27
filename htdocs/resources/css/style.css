@@ -31,25 +31,11 @@ html {
  * REUSABLES
  * -------------------------------------------------------------------- */
 
-.row, .skills {
+.row {
     max-width: 1140px;
     margin: 0 auto;
 	padding-top: 10px;
 	padding-bottom: 10px;
-}
-
-.skills:first-child {
-	padding-top: 0px;
-	color:green;
-}
-
-.skills::after {
-	clear:both;
-}
-
-.skills::before, .skills::after {
-    content: "";
-    display: block;
 }
 
 .subheadingrow {
@@ -66,23 +52,22 @@ html {
 	margin-top: 0;
 }
 
-.box {
-	margin-top:.6em;
-    padding: 0;
-}
-
 .text-align-right {
 	text-align: right;
-	padding: 0;
+	padding: 0 18px 0 18px;
 }
 
 .text-align-left {
 	text-align: left;
-	padding: 0;
+	padding: 0 18px 0 18px;
 }
 
 .text-align-center {
 	text-align: center;
+}
+
+.box {
+	margin-top:.6em;
 }
 
 .hr {
@@ -132,6 +117,10 @@ h2:after {
 	margin: 0 auto;
     margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.modal-header-row h2:after {
+	content: none;
 }
 
 h3 {
@@ -212,9 +201,29 @@ li {
 
 .section-skills,
 .section-education-references {
-	background: #f2f2f2;	
+	background: #f2f2f2;
+	padding-top: 20px;
+	padding-bottom: 20px;	
 }
- 
+
+.skills {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.skills:first-child {
+	padding-top: 0px;
+}
+
+.skills::after {
+	clear:both;
+}
+
+.skills::before, .skills::after {
+    content: "";
+    display: block;
+}
+
 ion-icon {
 	font-size: 2em;
 	margin-bottom: 1px;
@@ -254,19 +263,20 @@ a {
 	z-index: 1; /* Sit on top */
 	left: 0;
 	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
+	width: 100vw; /* Full width */
+	height: 100vh; /* Full height */
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+	border-radius: 10px;	
 }
 
 /* Modal Content Box */
 .modal-content {
 	background-color: #f9f9f9;
-	margin: 15% auto; 
+	margin: 2% auto; 
 	padding: 20px;
-	border: 2px solid #40373D;
+	border: 3px solid #73D9CF;
 	border-radius: 10px;
 	width: 45%;
 }
@@ -292,6 +302,10 @@ a {
 	text-align: right;
 }
 
+.modalRadio {
+	text-align: right;
+}
+
 .modal-align-center {
 	text-align: center;
 	padding: 0 40px;
@@ -314,41 +328,42 @@ a {
 		end contact modal
 ********************************/
 
+/*******************************
+		experimental
+********************************/
+form .row:first-of-type {
+	margin-top:24px;
+}
+
+.modal-header-row{
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.modal-greeting-row{
+	margin-top: 0;
+	padding-top: 0;
+	width: 65%;
+	text-align: center;
+}
 
 /*****************************************
 		begin responsive adjustments
 ******************************************/
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1725px) {
+	.modal-greeting-row {
+		width: 75%;
+	}
+}
+@media only screen and (max-width: 1575px) {
 	.modal-content {
-		margin: 15% auto; /* 15% from the top and centered */
+		margin: 3% auto;
 		padding: 10px;
-		width: 55%; /* Could be more or less, depending on screen size */
+		width: 65%;
 	  }
 }
 
-@media only screen and (max-width: 1190px) {
-	.modal-content {
-		margin: 15% auto; /* 15% from the top and centered */
-		padding: 10px;
-		width: 65%; /* Could be more or less, depending on screen size */
-	}
-
-	.modal-align-right{
-		text-align: left;
-		width: 97%;
-	  }
-
-	.modal-input{
-		width: 97%;
-	}
-
-	.modal-input input, .modal-input textarea{
-		width: 100%;
-	}
-
-}
-
-@media only screen and (max-width: 1139px) {
+@media only screen and (max-width: 1175px) {
 	html {
 		font-size: 30px;		
 	}
@@ -377,12 +392,12 @@ a {
 
 	.li-text {
 		width: 90%;
-		padding-left: 0;
+		padding-left: 15px;		
 	}
 
 	section {
-		/* padding-left: 5px; */
-		/* padding-right: 5px; */
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 
 	.text-align-right {
@@ -407,7 +422,35 @@ a {
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+
+	.modal-content {
+		width: 75%;
+	}
 }
+
+@media only screen and (max-width: 1000px) {
+	.modal-content {
+		width: 90%;
+	}
+}
+
+
+@media only screen and (max-width: 820px) {
+	.modal-align-right {
+		text-align: left;
+		width: 97%;
+	  }
+
+	.modal-input {
+		width: 90%;
+	}
+
+	.modal-input input, .modal-input textarea {
+		width: 100%;
+	}
+
+}
+
 
 @media only screen and (max-width: 480px) {
 	
@@ -451,20 +494,24 @@ a {
 		padding-right: 10px;
 	}
 
+	.span-1-of-3{
+		width: 49.2%;
+	}
+
 	.text-align-right {
-		text-align: left;
+		text-align: center;
 		margin-top: 0;
 		padding-top: 0;
 	}
 
 	.text-align-left {
-		text-align: left;
+		text-align: center;
 		margin-top: 0;
 		padding-top: 0;	
 	}
 
 	.text-align-center {
-		text-align: left;
+		text-align: center;
 		margin-top: 0;
 		padding-top: 0;
 	} 
@@ -479,5 +526,13 @@ a {
 		padding: 5px;
 		width: 95%;
 	}
+
+	.modalRadio {
+		width: 32.26%;
+	}
+
+	.modalRadioLabel{
+		width: 66.13%;
+	}	
 
 }

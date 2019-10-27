@@ -1,3 +1,13 @@
+<span id="closeModal" class="close">&times;</span>
+
+<div class="row modal-header-row">
+	<h2 class='contactHeading'>Contact Page</h2>
+</div>
+
+<div class="row modal-greeting-row">
+	<span class="contactModalGreeting">Thank you for contacting me. I never sell or distribute information gathered here.</span>
+</div>
+
 <form id="contact" method="POST" action="%s/sendMessage.php">
 	<!-- message info -->
 	<div class="row">
@@ -36,28 +46,28 @@
 	</div>
 
 	<div class="row">
-		<div class="col span-1-of-3 modal-align-right">
+		<div class="col span-1-of-3 modalRadio">
 			<input type="radio" id="sms_responseRequested" name="responseMethod" value="sms" data-parsley-required data-parsley-errors-container="#responseMethodError" data-parsley-error-message="&nbsp;&nbsp;&nbsp;Please choose one of the above" />
 		</div>
-		<div class="col span-2-of-3">
+		<div class="col span-2-of-3 modalRadioLabel">
 			<label>&nbsp;&nbsp;&nbsp;Text Message</label>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col span-1-of-3 modal-align-right">
+		<div class="col span-1-of-3 modalRadio">
 			<input type="radio" id="phoneCall_responseRequested" name="responseMethod" value="phone" data-parsley-required>
 		</div>
-		<div class="col span-2-of-3">
+		<div class="col span-2-of-3 modalRadioLabel">
 			<label>&nbsp;&nbsp;&nbsp;Phone Call</label>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col span-1-of-3 modal-align-right">
+		<div class="col span-1-of-3 modalRadio">
 			<input type="radio" id="email_responseRequested" name="responseMethod" value="email" data-parsley-required>
 		</div>
-		<div class="col span-2-of-3">
+		<div class="col span-2-of-3 modalRadioLabel">
 			<label>&nbsp;&nbsp;&nbsp;Email</label>
 		</div>
 	</div>	
@@ -79,7 +89,6 @@
  
 		</div>
 	</div>
-
 
 	<!-- reCaptcha  -->
 	<div class="row">
