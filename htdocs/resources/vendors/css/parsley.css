@@ -32,3 +32,8 @@ textarea.parsley-error {
 .parsley-errors-list.filled {
   opacity: 1;
 }
+
+/*manual addition to have manual control over a few inputs being hidden or shown */ 
+#responseMethodErrorField, #popOutRowForResponseAnswer {
+  display:none;
+}

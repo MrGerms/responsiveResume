@@ -11,6 +11,7 @@ TODO's:
     5) Add some CSS and JS pizazz. Image/icon resize on hover, hero background image refocus when hovering name, etc.
     6) Add instructional note on included config files, or maybe leave in a version with sensitive variables set to null
 
+
 Unsure:
 
     1) Menu
@@ -18,6 +19,8 @@ Unsure:
     3) Link to background projects page
     4) Add a custom database / CMS backend for config settings and maybe content updates.
 
+
 Completed, Alpha phase, watch for bugs
+
     1) Added google recaptcha
     2) Created contact modal window and connect twilio.

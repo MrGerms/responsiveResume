@@ -21,7 +21,7 @@
 	$gResponse = json_decode($gResponse, true);
 
 	//verify succesfull recaptcha
-	if( $gResponse['success'] !== true ){
+	if( $gResponse['success'] !== true){
 		$errorResponse = '';
 		foreach ($gResponse['error-codes'] as $k => $error){
 			switch($error){
@@ -50,7 +50,7 @@
 		//TODO:
 		//CREATE A NICE BOX ON PAGE THAT SAYS THERE WAS AN ERROR
 		//LOG ERROR
-		header("Location: https://www.tuchsen.net?captcha=failed");
+		header("Location: https://www.tuchsen.net?captcha=failed&message=".$errorResponse);
 		die();
 	}
 
@@ -114,11 +114,9 @@
 			)
 		);
 		
-        echo $smsMessage;
-		
 	}catch(Exception $e){
 			
-			header("Location: https://www.tuchsen.net?error=" .$e->getMessage());
+			header("Location: https://www.tuchsen.net?error=" .$e->getMessage() );
 	}
 
 	//TODO:

@@ -20,7 +20,7 @@
 
 	<div class="row">
 		<div class="col span-1-of-3 modal-align-right">
-			<label>Message*:&nbsp;&nbsp;&nbsp;</label>
+			<label>*&nbsp;Message:&nbsp;&nbsp;&nbsp;</label>
 		</div>
 		<div class="col span-2-of-3 modal-input">		
 			<textarea name='message' data-parsley-required>  </textarea>
@@ -30,41 +30,48 @@
 	<!-- response info -->
 	<div class="row">
 		<div class="col span-4-of-4 modal-align-left">
-				<p>Select your preferred way of receiving my response:</p>
-				<div id="responseMethodError"> </div>
-			</div>
-		</div>
-	
-		<div class="row">
-			<div class="col span-1-of-3 modal-align-right">
-				<input type="radio" id="sms_responseRequested" name="responseMethod" value="sms" data-parsley-required data-parsley-errors-container="#responseMethodError" />
-			</div>
-			<div class="col span-2-of-3">
-				<label>&nbsp;&nbsp;&nbsp;</label>Text Message</label>
-			</div>
-		</div>
-	
-		<div class="row">
-			<div class="col span-1-of-3 modal-align-right">
-				<input type="radio" id="phoneCall_responseRequested" name="responseMethod" value="phone" data-parsley-required>
-			</div>
-			<div class="col span-2-of-3">
-				<label>&nbsp;&nbsp;&nbsp;Phone Call</label>
-			</div>
-		</div>	
-		
-		<div class="row">
-			<div class="col span-1-of-3 modal-align-right">
-				<input type="radio" id="email_responseRequested" name="responseMethod" value="email" data-parsley-required>
-			</div>
-			<div class="col span-2-of-3">
-				<label>&nbsp;&nbsp;&nbsp;Email</label>
-			</div>
-		</div>	
+			<p>* Select your preferred way of receiving my response:</p>
 
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col span-1-of-3 modal-align-right">
+			<input type="radio" id="sms_responseRequested" name="responseMethod" value="sms" data-parsley-required data-parsley-errors-container="#responseMethodError" data-parsley-error-message="&nbsp;&nbsp;&nbsp;*&nbsp;Please choose one of the above" />
+		</div>
+		<div class="col span-2-of-3">
+			<label>&nbsp;&nbsp;&nbsp;Text Message</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col span-1-of-3 modal-align-right">
+			<input type="radio" id="phoneCall_responseRequested" name="responseMethod" value="phone" data-parsley-required>
+		</div>
+		<div class="col span-2-of-3">
+			<label>&nbsp;&nbsp;&nbsp;Phone Call</label>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col span-1-of-3 modal-align-right">
+			<input type="radio" id="email_responseRequested" name="responseMethod" value="email" data-parsley-required>
+		</div>
+		<div class="col span-2-of-3">
+			<label>&nbsp;&nbsp;&nbsp;Email</label>
+		</div>
+	</div>	
+
+	<!-- Parsley error field for response error-->
+	<div class="row" id="responseMethodErrorField">
+		<div class="col span-1-of-3"> &nbsp; </div>
+		<div class="col span-2-of-3">
+			<div id="responseMethodError"> </div>
+		</div>
+	</div>		
 
 	<!-- pop out input -->
-	<div class="row">		
+	<div class="row" id="popOutRowForResponseAnswer">		
 		<div class="col span-1-of-3 modal-align-right">
 			<label id="popOutLabel">&nbsp;&nbsp;&nbsp;</label>
 		</div>
@@ -80,7 +87,7 @@
 			<label>&nbsp;&nbsp;&nbsp;</label>
 		</div>
 		<div class="col span-2-of-3 modal-input">
-			<div class="g-recaptcha" data-sitekey="6LdSILwUAAAAAKfNt_zOxnDSZDHi7avsX4Ng8kl6"></div>
+			<div class="g-recaptcha" data-sitekey="6LfhdL8UAAAAAPstFkyK2IG3xB-xdRLx9JNlMW9d"></div>
 		</div>
 	</div>
 

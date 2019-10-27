@@ -7,20 +7,19 @@
 
 		<title>Tuchsen.net Home</title>
 
-		<link rel="stylesheet" type="text/css" href="resources/vendors/css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="resources/vendors/css/grid.css">
+		<link rel="stylesheet" type="text/css" href="resources/venders/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="resources/venders/css/grid.css">
 		<link rel="stylesheet" type="text/css" href="resources/css/style.css">
-		<link rel="stylesheet" type="text/css" href="resources/vendors/css/parsley.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400">
 
-		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-        <link rel="icon" href="favicon.ico">		
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
 	</head>
 
 	<body>
+	
 		<header>
 			<div class="row">
 				<div class="header-text">
@@ -33,29 +32,14 @@
 					<div class="contact">
 						<h3>Sun City, CA, 92585</h3>
 						<a href="https://www.linkedin.com/in/jeremy-tuchsen-98866832" target="_blank">
-							<ion-icon name="logo-linkedin"></ion-icon>
+							<ion-icon name="logo-linkedin" lines="none"></ion-icon>
 						</a>
-						<ion-icon name="text" id="contactBtn"></ion-icon>						
 					</div>					
 				</div>
 			</div>
-			
-			<!-- The Modal is created from ion-icon id="contactBtn". Modal content created in it's own .row for page flow and width -->
-				<div id="contactModal" class="modal">
-					<!-- Modal content -->
-					<div class="modal-content">
-                        <div class="row">
-							<h2>Contact Form <span id="closeModal" class="close">&times;</span></h2>
-						</div>
-
-						<?php 
-							$modalContent = file_get_contents("snippets/forms/contactus.html");
-							echo sprintf($modalContent, "");
-						?>
-					</div>
-				</div>			
 		</header>
 
+		
 		<section class="section-skills">
 			<div class="row">
 				<h2>Skill Highlights</h2>
@@ -68,16 +52,11 @@
 			</div>
 
 			<div class="skills">
-				<div class="col span-1-of-3 box text-align-left"> SASS </div>
+				<div class="col span-1-of-3 box text-align-left"> WordPress Plugin Creation </div>
 				<div class="col span-1-of-3 box text-align-center"> SQL </div>
 				<div class="col span-1-of-3 box text-align-right"> Lead Management </div>
 			</div>
-
-			<div class="skills">
-				<div class="col span-1-of-3 box text-align-left"> Twilio SMS </div>
-				<div class="col span-1-of-3 box text-align-center">  WordPress Plugin Creation  </div>
-			</div>
-						
+			
 		</section>
 		
 		<section class="section-employment-history">
@@ -268,31 +247,9 @@
 					<p><a href="https://www.pexels.com/photo/gray-laptop-computer-beside-green-ceramic-mug-1422286/">Photo by Aleksandar Cvetanovic from Pexels</a>
 				</div>				
 			</div>
-			<div class="row">
-				<div class="col span-2-of-4 text-align-right">
-					<p>CSS Grid Provided By&nbsp;-&nbsp;</p>
-				</div>
-				<div class="col span-2-of-4 footer-right text-align-left">
-					<p> <a href="http://www.responsivegridsystem.com/">Responsive Grid System</a>
-				</div>
-			</div>
 		</section>
-
-		<!-- Experimenting with es5 & es6 shim shams -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js"></script>
-
-		<!-- This shim is taking too long -->
-		<!-- script src="https://wzrd.in/standalone/es7-shim@latest"></script -->
-
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		
 		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-		<script src="https://tuchsen.ten/resources/vendors/js/jquery-3.4.1.min.js"></script>
-		<script src="https://tuchsen.ten/resources/vendors/js/parsley.min.js"></script>
-		<script src="https://tuchsen.ten/resources/js/jQdocReady.js"></script>
 		
 	</body>
 </html>
