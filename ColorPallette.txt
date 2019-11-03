@@ -1,5 +1,5 @@
 Default Background Color:
-	#f9f9f9;
+	#f9f9f9
 
 
 Light-Medium Grey

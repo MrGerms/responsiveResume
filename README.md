@@ -16,6 +16,7 @@ The config file in config\_EXMPLE_FILE_bootstrap.php will set up your twilio acc
 3. Add some CSS and JS pizazz. Image/icon resize on hover, hero background image refocus when hovering name, etc.
 4. Convert to SASS
 
+
 Unsure, might add in the future:
 - Menu, I honestly don't want to add this but might for UI/UE demonstration
 - Link to portfolio page

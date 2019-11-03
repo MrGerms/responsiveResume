@@ -27,16 +27,18 @@
 					<div class="name">
 						<h1>J. W. Tuchsen</h1>
 					</div>
+
 					<div class="slogan">
 						<h3>Finding solutions through algorithms</h3>
 					</div>
+
 					<div class="contact">
 						<h3>Sun City, CA, 92585</h3>
+						<ion-icon name="text" id="contactBtn"></ion-icon>
 						<a href="https://www.linkedin.com/in/jeremy-tuchsen-98866832" target="_blank">
 							<ion-icon name="logo-linkedin"></ion-icon>
 						</a>
-						<ion-icon name="text" id="contactBtn"></ion-icon>						
-					</div>					
+					</div>
 				</div>
 			</div>
 			
@@ -278,9 +280,9 @@
 
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-		<script src="https://tuchsen.ten/resources/vendors/js/jquery-3.4.1.min.js"></script>
-		<script src="https://tuchsen.ten/resources/vendors/js/parsley.min.js"></script>
-		<script src="https://tuchsen.ten/resources/js/jQdocReady.js"></script>
+		<script src="/resources/vendors/js/jquery-3.4.1.min.js"></script>
+		<script src="/resources/vendors/js/parsley.min.js"></script>
+		<script src="/resources/js/jQdocReady.js"></script>
 		
 	</body>
 </html>

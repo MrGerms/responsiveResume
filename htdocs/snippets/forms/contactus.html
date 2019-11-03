@@ -1,4 +1,4 @@
-<span id="closeModal" class="close">&times;</span>
+<span id="closeModal" class="close">&Chi;</span>
 
 <div class="row modal-header-row">
 	<h2 class='contactHeading'>Contact Page</h2>
@@ -100,15 +100,24 @@
 		</div>
 	</div>
 
+	<!-- reCaptcha Required Error Notice Pop Out -->
+	<div class="row" id="reCaptchaRequiredError">
+		<div class="col span-1-of-3"> &nbsp; </div>
+		<div class="col span-2-of-3">
+			<div id="reCaptchaErrorMessage" class="recaptcha-error">&nbsp;&nbsp;&nbsp;Please verify your humanity.</div>
+		</div>
+	</div>
 
 	<!-- Reset -->
 	<div class="row">
 		<div class="col span-1-of-3 modal-align-right modal-input">
 			<input type="reset" id="contactReset" class='btn'>&nbsp;&nbsp;&nbsp;
 		</div>
+
 	<!-- Submit -->
 		<div class="col span-2-of-3 modal-input">
-			<input type="submit" class='btn' value="Send Message" />
+			<input type="submit" class='btn' id="submitBtn" value="Send Message" />
 		</div>
 	</div>
+
 </form>

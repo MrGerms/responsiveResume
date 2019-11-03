@@ -33,7 +33,20 @@ textarea.parsley-error {
   opacity: 1;
 }
 
-/*manual addition to have manual control over a few inputs being hidden or shown */ 
-#responseMethodErrorField, #popOutRowForResponseAnswer {
+/*manual additions*/
+
+/* copied from above style for parsley-errors-list. later fix dup with sass */
+.recaptcha-error {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  color: #B94A48;
+}
+
+/*control over a few inputs being hidden on first render and shown later with js */ 
+#responseMethodErrorField, #popOutRowForResponseAnswer, #reCaptchaRequiredError {
   display:none;
 }
+

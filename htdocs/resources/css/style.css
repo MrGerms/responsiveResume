@@ -86,7 +86,7 @@ h1, h2, h3 {
 
 h1 {
 	font-weight: 700;
-	color: #f9f9f9;	
+	color: #f2f2f2;	
     font-size: 2em;
 	font-style: italic;
     margin: 0;
@@ -140,7 +140,7 @@ h3 {
  * -------------------------------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../vendors/img/hero/black-coffee-close-up-coffee-1422286_1140x679.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../vendors/img/hero/black-coffee-close-up-coffee-1422286_1140x679_hFlipped.gif);
     background-size: cover;
     background-position: left bottom;
 	height: 100vh;
@@ -149,9 +149,10 @@ header {
 
 .header-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-5%, -80%);
+    top: 10%;
+	left: 8%;
+	text-shadow: 2px 2px #40373D;
+/*  transform: translate(-5%, -80%); */
 }
 
 .contact, .contact h3, .contact a, .slogan h3 {
@@ -288,7 +289,7 @@ a {
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
-	padding: 0 10px;
+	padding: 0 10px 2px 10px;
 	border-radius: 9px;  
 }
 
@@ -367,12 +368,14 @@ form .row:first-of-type {
 	html {
 		font-size: 30px;		
 	}
-	
+
+/*
 	.header-text {
 		top: 50%;
 		left: 25%;
 		transform: none;
 	}
+*/
 
 	h1 {
 		font-size: 1.4em;
@@ -457,13 +460,14 @@ form .row:first-of-type {
 	html {
 		font-size: 20px;		
 	}
-	
+
+/*	
 	.header-text {
 		top: 50%;
 		left: 10%;
 		transform: none;
 	}
-
+*/
 	h1 {
 		font-size: 140%;
 		font-style: italic;

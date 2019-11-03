@@ -5,6 +5,8 @@ $(document).ready(function() {
         $("#contactModal").show();
         $('#contact').trigger("reset");
         $('#contact').parsley().reset();
+        $("#reCaptchaRequiredError").css("display","none");
+        grecaptcha.reset();
         $("#responseMethodErrorField").css("display", "none");
     });
 
@@ -13,6 +15,8 @@ $(document).ready(function() {
     $("#closeModal").on('click', function(e){
         $('#contact').trigger("reset");
         $('#contact').parsley().reset();
+        $("#reCaptchaRequiredError").css("display","none");
+        grecaptcha.reset();
         $("#responseMethodErrorField").css("display", "none");
         $("#contactModal").hide();
     });
@@ -23,6 +27,8 @@ $(document).ready(function() {
         if(e.target.id == "contactModal"){
             $('#contact').trigger("reset");
             $('#contact').parsley().reset();
+            $("#reCaptchaRequiredError").css("display","none");
+            grecaptcha.reset();
             $("#responseMethodErrorField").css("display", "none");            
             $("#contactModal").hide();
         }
@@ -35,13 +41,13 @@ $(document).ready(function() {
     //create a dynamic row for cb error to properly show message
     //default functionality either leaves an unwanted blank space or breaks cb
     $("#sms_responseRequested").parsley().on('field:error', function(){
-        console.log("inside parsley validation for responseMehtod");
+        console.log("inside parsley validation for #sms_responseRequested field:error");
         $("#responseMethodErrorField").css("display", "block");    
     });
 
     // Remove dynamic row when validated after cb error
     $("#sms_responseRequested").parsley().on('field:validate', function(){
-        console.log("inside parsley validation for responseMehtod");
+        console.log("inside parsley validation for #sms_responseRequested field:validate");
         $("#responseMethodErrorField").css("display", "none");
     });
 
@@ -49,13 +55,24 @@ $(document).ready(function() {
 
     // Form Reset settings for dynamic fields 
     $("#contact").on('reset', function(e) {
-
         console.log('inside reset from event function');
         $("#popOutLabel").text('');
         $("#popOutInput").html("");
         $('#contact').parsley().reset();
+        $("#reCaptchaRequiredError").css("display","none");
+        grecaptcha.reset();
         $("#responseMethodErrorField").css("display", "none");
-    });    
+    });  
+
+    // catch ReCaptcha Status on Submit, prevent submission unless something exists in box
+    $("#contact").submit(function(e){
+        if( !grecaptcha.getResponse() ){
+            e.preventDefault();
+            console.log('form submit attempted without reCaptcha value');
+            $("#reCaptchaRequiredError").css("display","block");
+        }
+    });
+
 });
 
 
