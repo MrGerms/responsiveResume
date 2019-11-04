@@ -142,7 +142,7 @@ h3 {
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(../vendors/img/hero/black-coffee-close-up-coffee-1422286_1140x679_hFlipped.gif);
     background-size: cover;
-    background-position: left bottom;
+	background-position: right bottom;
 	height: 100vh;
 	overflow-x:hidden;	
 }
@@ -152,7 +152,7 @@ header {
     top: 10%;
 	left: 8%;
 	text-shadow: 2px 2px #40373D;
-/*  transform: translate(-5%, -80%); */
+	max-width: 57.5%;
 }
 
 .contact, .contact h3, .contact a, .slogan h3 {
@@ -435,6 +435,10 @@ form .row:first-of-type {
 	.modal-content {
 		width: 90%;
 	}
+
+	header {
+		background-position: 70% bottom;
+	}
 }
 
 
@@ -452,6 +456,9 @@ form .row:first-of-type {
 		width: 100%;
 	}
 
+	header {
+		background-position: 65% bottom;
+	}
 }
 
 
