@@ -60,12 +60,12 @@
 			</div>
 			<div class="row">
 				<div class="skills notop"></div>
-					<div class="col span-1-of-3 box text-align-left"> PHP </div>
-					<div class="col span-1-of-3 box text-align-center"> HTML/CSS </div>
-					<div class="col span-1-of-3 box text-align-right"> JS </div>
-					<div class="col span-1-of-3 box text-align-left"> SASS </div>
-					<div class="col span-1-of-3 box text-align-center"> SQL </div>
-					<div class="col span-1-of-3 box text-align-right">  WordPress  </div>
+					<div class="col span-1-of-6 box text-align-left"> PHP </div>
+					<div class="col span-1-of-6 box text-align-center"> HTML/CSS </div>
+					<div class="col span-1-of-6 box text-align-right"> JS </div>
+					<div class="col span-1-of-6 box text-align-left"> SASS </div>
+					<div class="col span-1-of-6 box text-align-center"> SQL </div>
+					<div class="col span-1-of-6 box text-align-right">  WordPress  </div>
 				</div>
 			</div>
 		</section>
@@ -78,10 +78,10 @@
 			
 			<div class="subheadingrow">
 				<div class="col span-2-of-3 text-align-left">
-					<h3>Lead Solutions Trafficker, Thomson Reuters</h3>
+					<h3>Lead Solutions Trafficker,<br>Thomson Reuters</h3>
 				</div>
 				<div class="col span-1-of-3 text-align-right">
-					<h3>March 2015 – Dec 2018</h3>
+					<h3>2015 – 2018</h3>
 				</div>
 			</div>
 			
@@ -136,10 +136,10 @@
 			
 			<div class="subheadingrow">
 				<div class="col span-2-of-3 text-align-left">
-					<h3>Applications Support Analyst, Thomson Reuters</h3>
+					<h3>Applications Support Analyst,<br>Thomson Reuters</h3>
 				</div>
 				<div class="col span-1-of-3 text-align-right">
-					<h3>August 2013 – March 2015</h3>
+					<h3>2013 – 2015</h3>
 				</div>
 			</div>
 			
@@ -182,10 +182,10 @@
 			
 			<div class="subheadingrow">
 				<div class="col span-2-of-3 text-align-left">
-					<h3>Jr. Software Developer, LawInfo.com </h3>
+					<h3>Jr. Software Developer,<br>LawInfo.com </h3>
 				</div>
 				<div class="col span-1-of-3 text-align-right">
-					<h3>June 2011 – August 2013</h3>
+					<h3>2011 – 2013</h3>
 				</div>
 			</div>
 		
