@@ -60,12 +60,12 @@
 			</div>
 			<div class="row">
 				<div class="skills notop"></div>
-					<div class="col span-1-of-6 box text-align-left"> PHP </div>
-					<div class="col span-1-of-6 box text-align-center"> HTML/CSS </div>
-					<div class="col span-1-of-6 box text-align-right"> JS </div>
-					<div class="col span-1-of-6 box text-align-left"> SASS </div>
-					<div class="col span-1-of-6 box text-align-center"> SQL </div>
-					<div class="col span-1-of-6 box text-align-right">  WordPress  </div>
+					<div class="col span-1-of-6 skill-box text-align-center"> PHP </div>
+					<div class="col span-1-of-6 skill-box text-align-center"> HTML/CSS </div>
+					<div class="col span-1-of-6 skill-box text-align-center"> JS </div>
+					<div class="col span-1-of-6 skill-box text-align-center"> SASS </div>
+					<div class="col span-1-of-6 skill-box text-align-center"> SQL </div>
+					<div class="col span-1-of-6 skill-box text-align-center">  WordPress  </div>
 				</div>
 			</div>
 		</section>
@@ -77,11 +77,11 @@
 			</div>
 			
 			<div class="subheadingrow">
-				<div class="col span-2-of-3 text-align-left">
-					<h3>Lead Solutions Trafficker,<br>Thomson Reuters</h3>
+				<div class="col span-2-of-3 history-box text-align-left">
+					<h3 class="company">Lead Solutions Trafficker,<br>Thomson Reuters</h3>
 				</div>
-				<div class="col span-1-of-3 text-align-right">
-					<h3>2015 – 2018</h3>
+				<div class="col span-1-of-3 history-box text-align-right">
+					<h3 class="year">2015 – 2018</h3>
 				</div>
 			</div>
 			
@@ -135,11 +135,11 @@
 			</div>
 			
 			<div class="subheadingrow">
-				<div class="col span-2-of-3 text-align-left">
-					<h3>Applications Support Analyst,<br>Thomson Reuters</h3>
+				<div class="col span-2-of-3 history-box text-align-left">
+					<h3 class="company">Applications Support Analyst,<br>Thomson Reuters</h3>
 				</div>
-				<div class="col span-1-of-3 text-align-right">
-					<h3>2013 – 2015</h3>
+				<div class="col span-1-of-3 history-box text-align-right">
+					<h3 class="year">2013 – 2015</h3>
 				</div>
 			</div>
 			
@@ -181,11 +181,11 @@
 			</div>
 			
 			<div class="subheadingrow">
-				<div class="col span-2-of-3 text-align-left">
-					<h3>Jr. Software Developer,<br>LawInfo.com </h3>
+				<div class="col span-2-of-3 history-box text-align-left">
+					<h3 class="company">Jr. Software Developer,<br>LawInfo.com </h3>
 				</div>
-				<div class="col span-1-of-3 text-align-right">
-					<h3>2011 – 2013</h3>
+				<div class="col span-1-of-3 history-box text-align-right">
+					<h3 class="year">2011 – 2013</h3>
 				</div>
 			</div>
 		
