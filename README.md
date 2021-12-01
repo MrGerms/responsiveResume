@@ -10,11 +10,12 @@ The config file in config\_EXMPLE_FILE_bootstrap.php will set up your twilio acc
 
 
 ### TODO's:
-
-1. Need some fine tuning on Responsive media queries. Footer, .skills area, headers in history area
-2. Need to add a link to this github page
-3. Add some CSS and JS pizazz. Image/icon resize on hover, hero background image refocus when hovering name, etc.
-4. Convert to SASS
+1. Twilio connection is out of date and no longer working. Need to update
+2. Need some fine tuning on Responsive media queries. Footer, .skills area, headers in history area
+3. Need to add a link to this github page
+4. Add some CSS and JS pizazz. Image/icon resize on hover, hero background image refocus when hovering name, etc.
+5. Convert to SASS
+6. Update work experience
 
 
 Unsure, might add in the future:
