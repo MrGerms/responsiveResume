@@ -66,12 +66,38 @@ $(document).ready(function() {
 
     // catch ReCaptcha Status on Submit, prevent submission unless something exists in box
     $("#contact").submit(function(e){
+        
+        e.preventDefault();
         if( !grecaptcha.getResponse() ){
-            e.preventDefault();
             console.log('form submit attempted without reCaptcha value');
             $("#reCaptchaRequiredError").css("display","block");
+        }else{
+            var contactJqXhr = $.post(
+                "https://neshcut.ten/sendMessage.php", 
+                $( this ).serialize()
+            )
+            .done(function( returnData ) {
+                alert( "Data Loaded: " + returnData );
+                //TODO: TURN THIS BLOCK INTO A CONTENT UPDATE
+            })
+            .fail(function() {
+               alert( "error" );
+               //TODO: TURN THIS BLOCK INTO A CONTENT UPDATE
+            })
+            .always(function() {
+                alert( "finished" );
+                //TODO: USE THIS TO FADE OUT CREATED CONTENT FOR AJAX POST
+            });
+             
+
         }
+
+    
+
+
+
     });
+
 
 });
 

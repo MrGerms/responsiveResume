@@ -1,7 +1,7 @@
 <?php
-	/**************************
-	 *	check google recaptcha
-	 */
+/**************************
+ *	check google recaptcha
+ */
 
 	require_once "../config/g_sk.php";
 	$baseUrl = 'https://www.google.com/recaptcha/api/siteverify?';
@@ -55,13 +55,13 @@
 	}
 
 
-	/**************************
-	 *	collect form data
-	 */
+/**************************
+ *	collect form data
+ */
 
-    $name = filter_var( $_POST['personalName'], FILTER_SANITIZE_STRING);
+   $name = filter_var( $_POST['personalName'], FILTER_SANITIZE_STRING);
 	$company = filter_var( $_POST['companyName'], FILTER_SANITIZE_STRING);
-    $message = filter_var( $_POST['message'], FILTER_SANITIZE_STRING);
+   $message = filter_var( $_POST['message'], FILTER_SANITIZE_STRING);
 	$methodType = filter_var($_POST['responseMethod'], FILTER_SANITIZE_STRING);
 	switch($methodType){
 		case "sms":
@@ -87,7 +87,7 @@
 	$smsMessage .= "Company: ".$company ."\n";
 	$smsMessage .= "Respond Via: " . $responseType ."\n";
 	$smsMessage .= "Send Response To: " .$responseValue ."\n";
-    $smsMessage .= "Message: " .$message;
+   $smsMessage .= "Message: " .$message;
 
 	/**************************
 	 *	start twilio message

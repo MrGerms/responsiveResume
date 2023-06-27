@@ -16,7 +16,7 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-        <link rel="icon" href="favicon.ico">		
+      <link rel="icon" href="favicon.ico">		
 		<link rel="manifest" href="/site.webmanifest">
 	</head>
 
@@ -34,14 +34,16 @@
 
 					<div class="contact">
 						<h3>Sun City, CA, 92585</h3>
-						<ion-icon name="text" id="contactBtn"></ion-icon>
+						<?php /* <ion-icon name="text" id="contactBtn"></ion-icon> */ ?>
 						<a href="https://www.linkedin.com/in/jeremy-tuchsen-98866832" target="_blank">
 							<ion-icon name="logo-linkedin"></ion-icon>
 						</a>
 					</div>
 				</div>
 			</div>
-			
+			<?php 
+			/* 
+			// Ran out of credits on twilio, need to switch to free option
 			<!-- The Modal is created from ion-icon id="contactBtn". Modal content created in it's own .row for page flow and width -->
 				<div id="contactModal" class="modal">
 					<!-- Modal content -->
@@ -51,7 +53,9 @@
 							echo sprintf($modalContent, "");
 						?>
 					</div>
-				</div>			
+				</div>
+			*/
+			?>
 		</header>
 
 		<section class="section-skills">
@@ -74,6 +78,58 @@
 		
 			<div class="row">
 				<h2>Employment History</h2>
+			</div>
+			
+			<div class="subheadingrow">
+				<div class="col span-2-of-3 history-box text-align-left">
+					<h3 class="company">Alluring Shores</h3>
+				</div>
+				<div class="col span-1-of-3 history-box text-align-right">
+					<h3 class="year">2019 – Present</h3>
+				</div>				
+			</div>
+
+			<div class="row">
+				<div class="col span-4-of-4 ulist">
+					<ul>
+						<li>
+							<div class="row">
+								<div class="col li-bullet">
+									<ion-icon name="radio-button-on"></ion-icon>
+								</div>
+								<div class="col li-text">
+									An unlaunched sales platform for semi-customizable products.
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>		
+			
+			<div class="subheadingrow">
+				<div class="col span-2-of-3 history-box text-align-left">
+					<h3 class="company">Development Manager, <br>REUZEit</h3>
+				</div>
+				<div class="col span-1-of-3 history-box text-align-right">
+					<h3 class="year">2020 – Present</h3>
+				</div>				
+			</div>			
+			
+			<div class="row">
+				<div class="col span-4-of-4 ulist">
+					<ul>
+						<li>
+							<div class="row">
+								<div class="col li-bullet">
+									<ion-icon name="radio-button-on"></ion-icon>
+								</div>
+								<div class="col li-text">
+									Team lead for the development and maintenance of REUZEit's custom ERP.
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 			
 			<div class="subheadingrow">
